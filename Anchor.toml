@@ -1,0 +1,20 @@
+[features]
+seeds = false
+[programs.localnet]
+test001_smart_contract = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+
+[programs.devnet]
+test001_smart_contract = "BRBhbua18ePSpvp97RKKZG9sX4jjGS9hwYR6eZ6v7LX8"
+
+[programs.mainnet]
+test001_smart_contract = "2BDbYV1ocs2S1PsYnd5c5mqtdLWGf5VbCYvf28rs9LGj"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/mars/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
